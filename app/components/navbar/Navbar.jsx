@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
-import logoWhite from "@/public/assets/logoWhite.png";
+import logoWhite from "@/public/assets/logo.png";
 const navData = [
   { name: "The Team", id: "Banner", route: "/" },
   { name: "Our Services", id: "Services", route: "/" },
@@ -75,6 +75,7 @@ export default function Navbar({ scrollToSection, showNav }) {
 
         {/* for mobile devices */}
         <Stack
+          bgcolor={"#1b1919"}
           direction={"column"}
           display={{
             lg: "none",
@@ -89,7 +90,7 @@ export default function Navbar({ scrollToSection, showNav }) {
               justifyContent: "space-between",
               alignItems: "center",
               color: "white",
-              backgroundColor: "black",
+              // backgroundColor: "black",
               fontSize: "1.2rem",
               position: "fixed",
               top: "0",
@@ -100,7 +101,7 @@ export default function Navbar({ scrollToSection, showNav }) {
             }}
           >
             <Link href={"/"} style={{ textDecoration: "none", color: "white" }}>
-              GNS
+              <Image src={logoWhite} width={70} style={{ cursor: "pointer" }} />
             </Link>
             {!isNavOpen ? (
               <MenuIcon
