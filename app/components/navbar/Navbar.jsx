@@ -7,11 +7,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
-import logoWhite from "@/public/assets/logoWhite.png"
+import logoWhite from "@/public/assets/logoWhite.png";
 const navData = [
-  { name: "The Team", id: "Banner" },
-  { name: "Our Services", id: "Services" },
-  { name: "Contact us", id: "Contact" },
+  { name: "The Team", id: "Banner", route: "/" },
+  { name: "Our Services", id: "Services", route: "/" },
+  { name: "Contact us", id: "Contact", route: "/" },
 ];
 
 const translateOnLoad = keyframes`
@@ -159,7 +159,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                     >
                       <Typography
                         margin={"10px 20px"}
-                        color={pathname === el.route ? "limegreen" : "white"}
+                        color={"white"}
                         fontSize={"1.4rem"}
                         sx={{ "&:hover": { color: "limegreen" } }}
                       >

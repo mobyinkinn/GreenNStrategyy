@@ -106,7 +106,7 @@ export default function Banner() {
   };
 
   return (
-    <Box width={"100%"} margin={{ xs: "70px 30px", md: "70px 70px" }}>
+    <Box width={"100%"} margin={{ xs: "40px 0", md: "70px 70px" }}>
       <Slider {...settings} ref={sliderRef}>
         {Images.map((d) => (
           <Card d={d} />
@@ -128,12 +128,13 @@ function Card({ d }) {
       direction={{ md: "row" }}
       key={d.id}
       height={{ md: "57vh" }}
+      alignItems={"center"}
     >
       <Box
         position={"relative"}
         height={{ xs: "40vh", md: "53vh" }}
         width={{ xs: "80%", md: "40%" }}
-        borderRadius={{ xs: "40px 0 0 0", md: "100px 0 0 0" }}
+        borderRadius={{ xs: "40px 0 40px 0", md: "100px 0 0 0" }}
         overflow={"hidden"}
         sx={{
           backgroundImage: `url(${d.src.src})`,
@@ -145,14 +146,17 @@ function Card({ d }) {
         width={{ xs: "80%", md: "50%" }}
         height={{ md: "100%" }}
         color={"#ddd"}
-        padding={{ xs: "30px 0", md: "50px" }}
+        padding={{ xs: "20px 0 10px 0", md: "50px" }}
       >
-        <Typography fontSize={"2.5rem"} fontFamily={"Lora"}>
+        <Typography
+          fontSize={{ xs: "2rem", md: "1.8rem", lg: "2.5rem" }}
+          fontFamily={"Lora"}
+        >
           {d.head} <span style={{ color: "#005900" }}>{d.head2}</span>
         </Typography>
         <Box
-          marginTop={"30px"}
-          width={{ md: "400px", xs: "200px" }}
+          marginTop={{ xs: "15px", md: "30px" }}
+          width={{ lg: "400px", xs: "200px" }}
           sx={{
             content: "''",
             height: "1px",
@@ -164,7 +168,11 @@ function Card({ d }) {
         </Typography> */}
         {Array.isArray(d.content?.leftColumn) &&
         Array.isArray(d.content?.rightColumn) ? (
-          <Stack direction={"row"} spacing={5} marginTop={"30px"}>
+          <Stack
+            direction={"row"}
+            spacing={5}
+            marginTop={{ xs: "15px", md: "30px" }}
+          >
             {/* Left Column */}
             <Box padding={{ md: "20px" }}>
               <ul style={{ listStyleType: "disc" }}>
@@ -232,7 +240,7 @@ function ProgressBar({ currentSlide, totalSlides, onProgressBarClick }) {
 
   return (
     <Stack
-      height={"100px"}
+      height={{ xs: "20px", md: "100px" }}
       width={"100%"}
       direction={"row"}
       gap={"20px"}

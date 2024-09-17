@@ -21,14 +21,6 @@ export default function ServiceCard({ name, data }) {
         },
       }}
     >
-      {/* <Box
-        sx={{
-          width: "40%",
-          height: "3px",
-          backgroundColor: "limegreen",
-          margin: "auto",
-        }}
-      ></Box> */}
       <Stack
         width={{
           xs: "80vw",

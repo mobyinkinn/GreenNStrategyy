@@ -19,7 +19,7 @@ const SectionVideo = () => {
           <Typography
             color="white"
             fontFamily={"Lora"}
-            fontSize={{ xs: "25px", sm: "40px", lg: "70px" }}
+            fontSize={{ xs: "25px", sm: "40px", lg: "45px", xl: "60px" }}
           >
             <span style={{ color: "#005900", fontWeight: "bold" }}>How</span> Do
             We Work?
