@@ -384,7 +384,7 @@ export default function Landing({ setShowNav }) {
             height={"100px"}
             width={"70px"}
             borderRadius={6}
-            border={"1px solid #053726"}
+            border={"1px solid #005900"}
           >
             <KeyboardDoubleArrowDownIcon
               sx={{

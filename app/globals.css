@@ -31,22 +31,22 @@ html {
 }
 
 .market-research > li:hover {
-  border: 1px solid limegreen;
-  background-color: limegreen;
+  border: 1px solid #005900;
+  background-color: #005900;
   cursor: pointer;
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
 
 .banner-animation-delay {
-  background-color: limegreen;
+  background-color: #005900;
   height: 100%;
   width: 0%;
   animation: expandWidthDelay 10s ease infinite forwards;
   animation-delay: 3s;
 }
 .banner-animation {
-  background-color: limegreen;
+  background-color: #005900;
   height: 100%;
   width: 0%;
   animation: expandWidth 10s ease infinite forwards;
@@ -115,7 +115,7 @@ html {
 .btn-green {
   height: 50px;
   padding: 5px 15px;
-  background-color: green;
+  background-color: #005900;
   border: 1px solid #ddd;
   border-radius: 10px;
   color: #ddd;
@@ -125,13 +125,13 @@ html {
 
 .btn-green:hover {
   background-color: #ddd;
-  color: green;
+  color: #005900;
   transition: all 0.5s ease;
   cursor: pointer;
 }
 
 .progress-bar {
-  background-color: limegreen;
+  background-color: #005900;
   height: 100%;
   width: 0%;
 }
@@ -146,13 +146,13 @@ html {
 }
 
 .icon:hover {
-  color: limegreen;
+  color: #005900;
   cursor: pointer;
   transform: scale(1.2);
 }
 
 .expanding-link a:hover {
-  color: limegreen;
+  color: #005900;
   transform: scale(1.2);
   transition: transform 0.5s ease;
 }
@@ -200,12 +200,12 @@ body {
   border: 1px solid #ddd;
   color: #ddd;
   font-size: 1.1rem;
-  box-shadow: inset 0 0 0 0 #0c9265;
+  box-shadow: inset 0 0 0 0 #005900;
   transition: ease-out 0.5s;
 }
 
 .btn-animated:hover {
-  box-shadow: inset 0 55px 0 0 #0c9265;
+  box-shadow: inset 0 55px 0 0 #005900;
   color: white;
 }
 
@@ -213,7 +213,7 @@ body {
   content: "";
   width: 0;
   height: 4px;
-  background-color: limegreen;
+  background-color:#005900;
   margin: 0 auto;
   transition: all 0.3s ease-out;
   border-radius: 30%;
@@ -229,7 +229,7 @@ body {
 .cursor {
   width: 20px; /* Adjust the size of the dot */
   height: 20px;
-  background-color: green; /* Green color for the dot */
+  background-color: #005900; /* Green color for the dot */
   border-radius: 50%;
   position: fixed;
   pointer-events: none; /* Ensures the cursor does not interfere with clicking elements */

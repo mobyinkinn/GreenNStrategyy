@@ -63,7 +63,8 @@ export default function Banner() {
   const Images = [
     {
       id: 1,
-      head: "#1 Data Analysis and Strategy Firm in the USA",
+      head: "#1 Data Analysis and Strategy Firm in the",
+      head2:"USA",
       content:
         "We deliver the bullet proof strategy for your business success, driven by invalueable data and in depth research tailored specifically for your brand.",
       src: banner1,
@@ -138,7 +139,7 @@ function Card({ d }) {
       ></Box>
       <Box width={"50%"} height={"100%"} color={"#ddd"} padding={"50px"}>
         <Typography fontSize={"2.5rem"} fontFamily={"Lora"}>
-          {d.head}
+          {d.head} <span style={{color:"#005900"}}>{d.head2}</span>
         </Typography>
         <Box
           marginTop={"30px"}

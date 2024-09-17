@@ -69,8 +69,7 @@ export default function ServiceCard({ name, data }) {
         <Slide direction="up" in={showButton} mountOnEnter unmountOnExit>
           <Button
             endIcon={<ArrowRightIcon sx={{ pl: "0px", fontSize: "10px" }} />}
-            color={"limegreen"}
-            sx={{ textTransform: "none", color: "#0c9265" }}
+            sx={{ textTransform: "none", color: "#005900" }}
           >
             Learn more
           </Button>

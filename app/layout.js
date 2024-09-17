@@ -9,14 +9,11 @@ import CustomCursor from "./components/CustomCursor";
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0,
-      sm: 314,
-      smm: 530,
+      sm: 420,
       md: 768,
       lg: 1024,
-      xl: 1220,
-      xll: 1440,
-      xxl: 1600,
+      xll:1220,
+      xl: 1440,
     },
   },
 });

@@ -33,6 +33,38 @@ var settings = {
   autoplay: true,
   autoplaySpeed: 2000,
   cssEase: "ease",
+  responsive: [
+    {
+      breakpoint: 1440, // For large screens
+      settings: {
+        slidesToShow: 8,
+      },
+    },
+    {
+      breakpoint: 1220, // For large screens
+      settings: {
+        slidesToShow: 7,
+      },
+    },
+    {
+      breakpoint: 1024, // For large screens
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 768, // For medium screens (tablets)
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 430, // For small screens (mobile)
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
 };
 var settingsRight = {
   dots: false,
@@ -45,13 +77,45 @@ var settingsRight = {
   autoplay: true,
   autoplaySpeed: 2000,
   cssEase: "ease",
+  responsive: [
+    {
+      breakpoint: 1440, // For large screens
+      settings: {
+        slidesToShow: 8,
+      },
+    },
+    {
+      breakpoint: 1220, // For large screens
+      settings: {
+        slidesToShow: 7,
+      },
+    },
+    {
+      breakpoint: 1024, // For large screens
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 768, // For medium screens (tablets)
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 430, // For small screens (mobile)
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+  ],
 };
 
 export default function Carausal() {
   return (
-    <Box padding={"50px 50px"}>
+    <Box padding={{sm:"50px 20px",xl:"50px 50px"}}>
       <Stack direction={"row"} alignItems={"Center"} pb={2}>
-        <Typography color="white" fontFamily={"Lora"} fontSize={"70px"}>
+        <Typography color="white" fontFamily={"Lora"} fontSize={{xl:"70px",xll:"55px",lg:"40px",md:"35px",sm:"30px"}}>
           Our Clients
         </Typography>
       </Stack>
@@ -59,34 +123,29 @@ export default function Carausal() {
         <Slider {...settings}>
           {carausel.map((el, i) => {
             return (
-              <Box>
-                <Image
-                  width={100}
-                  height={100}
-                  src={el.img}
-                  alt=""
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </Box>
+              <Images el={el} />
             );
           })}
         </Slider>
         <Slider {...settingsRight}>
           {carausel.map((el, i) => {
-            return (
-              <Box>
-                <Image
-                  width={100}
-                  height={100}
-                  src={el.img}
-                  style={{ filter: "grayscale(100%)" }}
-                  alt=""
-                />
-              </Box>
-            );
+            return <Images el={el} />;
           })}
         </Slider>
       </Stack>
     </Box>
   );
+}
+
+
+function Images({el}){
+return <Stack alignItems={"center"} justifyContent={"center"} display={"flex"}>
+                <Image
+                  width={100}
+                  height={100}
+                  src={el.img}
+                  alt=""
+                  style={{ filter: "grayscale(100%)" }}
+                />
+              </Stack>
 }

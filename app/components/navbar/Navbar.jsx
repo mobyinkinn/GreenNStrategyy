@@ -2,17 +2,16 @@
 
 import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { keyframes } from "@emotion/react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
-import logoWhite from "@/public/assets/logoWhitee.png"
+import logoWhite from "@/public/assets/logoWhite.png"
 const navData = [
-  { name: "The Team", route: "/About" },
-  { name: "Our Services", route: "/Services" },
-  { name: "Contact us", route: "/Contacts" },
+  { name: "The Team", id: "Banner" },
+  { name: "Our Services", id: "Services" },
+  { name: "Contact us", id: "Contact" },
 ];
 
 const translateOnLoad = keyframes`
@@ -24,8 +23,7 @@ const translateOnLoad = keyframes`
   }
 `;
 
-export default function Navbar({ showNav = true }) {
-  const { pathname } = useRouter();
+export default function Navbar({ scrollToSection, showNav }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   if (showNav) {
@@ -33,6 +31,7 @@ export default function Navbar({ showNav = true }) {
       <Stack>
         {/* For desktop view */}
         <Stack
+          bgcolor={"#1b1919"}
           display={{
             xs: "none",
             lg: "flex",
@@ -56,27 +55,21 @@ export default function Navbar({ showNav = true }) {
           {/* <Link href={"/"} style={{ textDecoration: "none", color: "white" }}>
             GNS
           </Link> */}
-          <Image src={logoWhite}  width={300} style={{cursor:"pointer"}}/>
+          <Image src={logoWhite} width={300} style={{ cursor: "pointer" }} />
           <Stack direction={"row"}>
-            {navData.map((el, i) => {
-              return (
-                <Link
-                  key={i}
-                  href={el.route}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Typography
-                  fontFamily={"Lora"}
-                    margin={"0 20px"}
-                    color={pathname === el.route ? "limegreen" : "white"}
-                    fontSize={"1.4rem"}
-                    sx={{ "&:hover": { color: "limegreen" } }}
-                  >
-                    {el.name}
-                  </Typography>
-                </Link>
-              );
-            })}
+            {navData.map((el, i) => (
+              <Typography
+                key={i}
+                onClick={() => scrollToSection(el.id)}
+                fontFamily={"Lora"}
+                margin={"0 20px"}
+                color="white"
+                fontSize={"1.4rem"}
+                sx={{ cursor: "pointer", "&:hover": { color: "limegreen" } }}
+              >
+                {el.name}
+              </Typography>
+            ))}
           </Stack>
         </Stack>
 
