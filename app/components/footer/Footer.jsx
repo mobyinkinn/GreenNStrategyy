@@ -1,7 +1,7 @@
 import { Box, Stack, TextField, Typography } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/public/assets/2.png"
+import Logo from "@/public/assets/2.png";
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -161,35 +161,36 @@ export default function Footer() {
     <>
       <Stack>
         <Stack
+          padding={"50px 20px"}
           width={"100%"}
-          height={"18vh"}
           bgcolor={"#0a320a"}
-          direction={"row"}
+          direction={{ md: "row" }}
+          gap={"30px"}
           justifyContent={"space-around"}
           alignItems={"center"}
         >
           <Stack>
             <Image src={Logo} width={100} />
           </Stack>
-          <Stack direction={"row"} gap={"10px"}>
+          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <LocationOnIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
               The Metropolis, BusinessBay
             </Typography>
           </Stack>
-          <Stack direction={"row"} gap={"10px"}>
+          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
               +9715 61728827
             </Typography>
           </Stack>
-          <Stack direction={"row"} gap={"10px"}>
+          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <EmailIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
               info@gns.com
             </Typography>
           </Stack>
-          <Stack direction={"row"} gap={"10px"}>
+          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <InstagramIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
               GreenandStrategy

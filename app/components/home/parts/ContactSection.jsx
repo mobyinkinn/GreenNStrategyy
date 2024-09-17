@@ -3,7 +3,6 @@ import { Box, Stack, Typography } from "@mui/material";
 import {
   TextField,
   Button,
-  Grid,
   MenuItem,
   Select,
   InputLabel,
@@ -19,15 +18,19 @@ const ContactSection = () => {
     setPhone(newPhone);
   };
   return (
-    <>
-      <Stack p={"30px 50px 0 50px"}>
-        <Typography color="white" fontFamily={"Lora"} fontSize={"50px"}>
+    <Stack margin={"50px 0"}>
+      <Stack margin={{ xs: "0 30px", md: "30px 50px 0 50px" }}>
+        <Typography
+          color="white"
+          fontFamily={"Lora"}
+          fontSize={{ xs: "30px", md: "50px" }}
+        >
           we mean business.
         </Typography>
         <Typography
           color="white"
           fontFamily={"Lora"}
-          fontSize={"90px"}
+          fontSize={{ xs: "60px", md: "90px" }}
           lineHeight={1}
         >
           reach out&nbsp;
@@ -46,8 +49,17 @@ const ContactSection = () => {
           }}
         />
       </Stack>
-      <Stack direction={"row"} p={"50px 0px"}>
-        <Stack width={"30%"} gap={"20px"} margin={"auto"}>
+      <Stack
+        direction={{
+          md: "row",
+        }}
+        p={"50px 0px"}
+      >
+        <Stack
+          width={{ md: "30%" }}
+          gap={"20px"}
+          margin={{ xs: "0 30px", md: "auto" }}
+        >
           <Stack gap={"5px"}>
             <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
               We greatly appreciate your interest.
@@ -58,258 +70,190 @@ const ContactSection = () => {
               If you're in the Real Estate, Food and Beverage, E-commerce, or
               any other business sector, our team has you covered!
             </Typography>
-            {/* <Box
-            color="white"
-            display={"flex"}
-            gap={"10px"}
-            flexDirection={"column"}
-          >
-            <li>
-              Validate your situation with our business advisors and IT
-              executives
-            </li>
-            <li>
-              Understand business results, not just technical implications
-            </li>
-            <li>Discuss possible solutions</li>
-            <li>Achieve a better knowledge of the best choices</li>
-            <li>Get a cost estimate, no obligation</li>
-          </Box> */}
           </Stack>
         </Stack>
 
         <Stack
-          width={"50%"}
+          width={{ md: "50%" }}
+          margin={{
+            md: "auto",
+          }}
+          gap={"15px"}
           sx={{
             maxWidth: "700px",
-            margin: "auto",
-            padding: "2rem",
-            borderRadius: "8px",
+            padding: "30px",
           }}
         >
-          {/* <h2
-            style={{
-              color: "white",
-              textAlign: "center",
-              marginBottom: "2rem",
-              fontWeight: "bold",
-              fontSize: "50px",
-            }}
-          >
-            Contact us
-          </h2> */}
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
-              {/* <TextField
+          <Stack direction={{ md: "row" }} gap={"15px"}>
+            <TextField
               sx={{
-                color: "#fff",
-                border: "1px solid #ddd",
                 "& .MuiInputBase-input::placeholder": {
                   color: "#fff",
                 },
                 "& .MuiOutlinedInput-root": {
-                  color: "#fff", // This sets the text color inside the input to white
+                  color: "#fff", // Text color
+                  "& fieldset": {
+                    borderColor: "#ddd", // Normal border color
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "#aaa", // Hover border color
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#fff", // Focused border color
+                  },
                 },
                 "& .MuiInputLabel-root": {
-                  color: "#fff", // This sets the label color to white
+                  color: "#fff", // Label color when not focused
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#fff", // Label color when focused
                 },
               }}
               label="First name"
               variant="outlined"
               fullWidth
-            /> */}
-              <TextField
-                sx={{
-                  "& .MuiInputBase-input::placeholder": {
-                    color: "#fff",
+              required
+              placeholder="Enter your first name"
+              InputProps={{
+                style: { color: "#fff" }, // Text input color
+              }}
+            />
+            <TextField
+              sx={{
+                "& .MuiInputBase-input::placeholder": {
+                  color: "#fff",
+                },
+                "& .MuiOutlinedInput-root": {
+                  color: "#fff", // Text color
+                  "& fieldset": {
+                    borderColor: "#ddd", // Normal border color
                   },
-                  "& .MuiOutlinedInput-root": {
-                    color: "#fff", // Text color
-                    "& fieldset": {
-                      borderColor: "#ddd", // Normal border color
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#aaa", // Hover border color
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#fff", // Focused border color
-                    },
+                  "&:hover fieldset": {
+                    borderColor: "#aaa", // Hover border color
                   },
-                  "& .MuiInputLabel-root": {
-                    color: "#fff", // Label color when not focused
+                  "&.Mui-focused fieldset": {
+                    borderColor: "#fff", // Focused border color
                   },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#fff", // Label color when focused
-                  },
-                }}
-                label="First name"
-                variant="outlined"
-                fullWidth
-                required
-                placeholder="Enter your first name"
-                InputProps={{
-                  style: { color: "#fff" }, // Text input color
-                }}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <TextField
-                sx={{
-                  "& .MuiInputBase-input::placeholder": {
-                    color: "#fff",
-                  },
-                  "& .MuiOutlinedInput-root": {
-                    color: "#fff", // Text color
-                    "& fieldset": {
-                      borderColor: "#ddd", // Normal border color
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#aaa", // Hover border color
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#fff", // Focused border color
-                    },
-                  },
-                  "& .MuiInputLabel-root": {
-                    color: "#fff", // Label color when not focused
-                  },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#fff", // Label color when focused
-                  },
-                }}
-                label="Last name"
-                variant="outlined"
-                fullWidth
-                required
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                sx={{
-                  "& .MuiInputBase-input::placeholder": {
-                    color: "#fff",
-                  },
-                  "& .MuiOutlinedInput-root": {
-                    color: "#fff", // Text color
-                    "& fieldset": {
-                      borderColor: "#ddd", // Normal border color
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#aaa", // Hover border color
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#fff", // Focused border color
-                    },
-                  },
-                  "& .MuiInputLabel-root": {
-                    color: "#fff", // Label color when not focused
-                  },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#fff", // Label color when focused
-                  },
-                }}
-                label="Work Email"
-                fullWidth
-                required
-                type="email"
-                placeholder="name@company.com"
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <MuiTelInput
-                value={phone}
-                onChange={handlePhoneChange}
-                defaultCountry="IN"
-                //   sx={{
-                //     width: "100%",
-                //     color: "#fff",
-                //     border: "1px solid #ddd",
-                //     "& .MuiInputBase-input::placeholder": {
-                //       color: "#fff",
-                //     },
-                //     "& .MuiOutlinedInput-root": {
-                //       color: "#fff", // This sets the text color inside the input to white
-                //     },
-                //     "& .MuiInputLabel-root": {
-                //       color: "#fff", // This sets the label color to white
-                //     },
-                //   }}
-                sx={{
-                  width: "100%",
-                  "& .MuiInputBase-input::placeholder": {
-                    color: "#fff",
-                  },
-                  "& .MuiOutlinedInput-root": {
-                    color: "#fff", // Text color
-                    "& fieldset": {
-                      borderColor: "#ddd", // Normal border color
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#aaa", // Hover border color
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#fff", // Focused border color
-                    },
-                  },
-                  "& .MuiInputLabel-root": {
-                    color: "#fff", // Label color when not focused
-                  },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#fff", // Label color when focused
-                  },
-                }}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                sx={{
-                  "& .MuiInputBase-input::placeholder": {
-                    color: "#fff",
-                  },
-                  "& .MuiOutlinedInput-root": {
-                    color: "#fff", // Text color
-                    "& fieldset": {
-                      borderColor: "#ddd", // Normal border color
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#aaa", // Hover border color
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#fff", // Focused border color
-                    },
-                  },
-                  "& .MuiInputLabel-root": {
-                    color: "#fff", // Label color when not focused
-                  },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#fff", // Label color when focused
-                  },
-                }}
-                label="Message"
-                variant="outlined"
-                fullWidth
-                required
-                multiline
-                rows={4}
-                placeholder="Let's talk about your business needs"
-              />
-            </Grid>
-            <Grid item xs={12} sx={{ textAlign: "center" }}>
-              <Button
-                variant="contained"
-                sx={{
-                  borderRadius: "8px",
-                  padding: "0.5rem 2rem",
-                  bgcolor: "#005900",
-                }}
-              >
-                Submit
-              </Button>
-            </Grid>
-          </Grid>
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#fff", // Label color when not focused
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                  color: "#fff", // Label color when focused
+                },
+              }}
+              label="Last name"
+              variant="outlined"
+              fullWidth
+              required
+            />
+          </Stack>
+          <TextField
+            sx={{
+              "& .MuiInputBase-input::placeholder": {
+                color: "#fff",
+              },
+              "& .MuiOutlinedInput-root": {
+                color: "#fff", // Text color
+                "& fieldset": {
+                  borderColor: "#ddd", // Normal border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "#aaa", // Hover border color
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#fff", // Focused border color
+                },
+              },
+              "& .MuiInputLabel-root": {
+                color: "#fff", // Label color when not focused
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#fff", // Label color when focused
+              },
+            }}
+            label="Work Email"
+            fullWidth
+            required
+            type="email"
+            placeholder="name@company.com"
+          />
+          <MuiTelInput
+            value={phone}
+            onChange={handlePhoneChange}
+            defaultCountry="IN"
+            sx={{
+              "& .MuiInputBase-input::placeholder": {
+                color: "#fff",
+              },
+              "& .MuiOutlinedInput-root": {
+                color: "#fff", // Text color
+                "& fieldset": {
+                  borderColor: "#ddd", // Normal border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "#aaa", // Hover border color
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#fff", // Focused border color
+                },
+              },
+              "& .MuiInputLabel-root": {
+                color: "#fff", // Label color when not focused
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#fff", // Label color when focused
+              },
+            }}
+          />
+          <TextField
+            sx={{
+              width: "100%",
+              "& .MuiInputBase-input::placeholder": {
+                color: "#fff",
+              },
+              "& .MuiOutlinedInput-root": {
+                color: "#fff", // Text color
+                "& fieldset": {
+                  borderColor: "#ddd", // Normal border color
+                },
+                "&:hover fieldset": {
+                  borderColor: "#aaa", // Hover border color
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#fff", // Focused border color
+                },
+              },
+              "& .MuiInputLabel-root": {
+                color: "#fff", // Label color when not focused
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#fff", // Label color when focused
+              },
+            }}
+            label="Message"
+            variant="outlined"
+            fullWidth
+            required
+            multiline
+            rows={4}
+            placeholder="Let's talk about your business needs"
+          />
+          <Button
+            variant="contained"
+            sx={{
+              margin: "0 auto",
+              width: "200px",
+              borderRadius: "8px",
+              padding: "0.5rem 2rem",
+              bgcolor: "#005900",
+            }}
+          >
+            Submit
+          </Button>
         </Stack>
       </Stack>
-    </>
+    </Stack>
   );
 };
 

@@ -6,9 +6,9 @@ import ServiceCard from "../home/parts/ServiceCard";
 export default function Services() {
   return (
     <Stack
-      padding={{
-        xs: "20px 20px",
-        md: "50px 50px",
+      margin={{
+        xs: "50px 20px",
+        md: "50px 70px",
       }}
       color={"white"}
       gap={"30px"}
@@ -41,18 +41,23 @@ export default function Services() {
         </span>
       </Stack> */}
       <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
-        <Typography color="white" fontFamily={"Lora"} fontSize={"70px"}>
-          <span style={{ color: "#005900", fontWeight: "bold" }}>What</span>{" "}
-          {""}
-          We do
+        <Typography
+          color="white"
+          fontFamily={"Lora"}
+          fontSize={{ xs: "40px", md: "70px" }}
+        >
+          <span style={{ color: "#005900", fontWeight: "bold" }}>What</span> We
+          do
         </Typography>
       </Stack>
       <Stack
         direction={{
-          xs: "column",
           md: "row",
         }}
-        sx={{ justifyContent: "space-between", flexWrap: "wrap" }}
+        sx={{
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+        }}
       >
         {serviceData.map((el) => (
           <ServiceCard name={el.name} data={el.data} key={el.id} />

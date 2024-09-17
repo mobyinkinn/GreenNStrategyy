@@ -4,7 +4,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import Slide from "@mui/material/Slide";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 export default function ServiceCard({ name, data }) {
   const [showButton, setShowButton] = useState(false);
 
@@ -32,10 +32,11 @@ export default function ServiceCard({ name, data }) {
       <Stack
         width={{
           xs: "80vw",
-          md: "40vw",
+          md: "35vw",
           lg: "20vw",
         }}
         sx={{
+          margin: "0 auto",
           justifyContent: "space-between",
           height: "100%",
           border: "1px solid white",

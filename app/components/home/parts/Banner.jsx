@@ -64,7 +64,7 @@ export default function Banner() {
     {
       id: 1,
       head: "#1 Data Analysis and Strategy Firm in the",
-      head2:"USA",
+      head2: "USA",
       content:
         "We deliver the bullet proof strategy for your business success, driven by invalueable data and in depth research tailored specifically for your brand.",
       src: banner1,
@@ -106,7 +106,7 @@ export default function Banner() {
   };
 
   return (
-    <Box width={"100vw"} margin={"70px 70px"} >
+    <Box width={"100%"} margin={{ xs: "70px 30px", md: "70px 70px" }}>
       <Slider {...settings} ref={sliderRef}>
         {Images.map((d) => (
           <Card d={d} />
@@ -124,28 +124,37 @@ export default function Banner() {
 function Card({ d }) {
   return (
     <Stack
-      sx={{ display: "flex", flexWrap: "wrap" }}
-      direction={"row"}
+      sx={{ flexWrap: "wrap" }}
+      direction={{ md: "row" }}
       key={d.id}
-      height={"57vh"}
+      height={{ md: "57vh" }}
     >
       <Box
         position={"relative"}
-        height={"53vh"}
-        width={"40%"}
-        borderRadius={"100px 0 0 0"}
+        height={{ xs: "40vh", md: "53vh" }}
+        width={{ xs: "80%", md: "40%" }}
+        borderRadius={{ xs: "40px 0 0 0", md: "100px 0 0 0" }}
         overflow={"hidden"}
-        sx={{ backgroundImage: `url(${d.src.src})`, backgroundSize: "cover" }}
+        sx={{
+          backgroundImage: `url(${d.src.src})`,
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+        }}
       ></Box>
-      <Box width={"50%"} height={"100%"} color={"#ddd"} padding={"50px"}>
+      <Box
+        width={{ xs: "80%", md: "50%" }}
+        height={{ md: "100%" }}
+        color={"#ddd"}
+        padding={{ xs: "30px 0", md: "50px" }}
+      >
         <Typography fontSize={"2.5rem"} fontFamily={"Lora"}>
-          {d.head} <span style={{color:"#005900"}}>{d.head2}</span>
+          {d.head} <span style={{ color: "#005900" }}>{d.head2}</span>
         </Typography>
         <Box
           marginTop={"30px"}
+          width={{ md: "400px", xs: "200px" }}
           sx={{
             content: "''",
-            width: "400px",
             height: "1px",
             bgcolor: "#655d5d",
           }}
@@ -157,8 +166,8 @@ function Card({ d }) {
         Array.isArray(d.content?.rightColumn) ? (
           <Stack direction={"row"} spacing={5} marginTop={"30px"}>
             {/* Left Column */}
-            <Box>
-              <ul style={{ listStyleType: "disc", paddingLeft: "20px" }}>
+            <Box padding={{ md: "20px" }}>
+              <ul style={{ listStyleType: "disc" }}>
                 {d.content.leftColumn.map((item, index) => (
                   <li
                     key={index}
