@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
-import logoWhite from "@/public/assets/logo.png";
+import logo from "@/public/assets/logo.png";
 import logobig from "@/public/assets/logoWhite.png";
 import { useRouter } from "next/navigation";
 const navData = [
@@ -109,7 +109,7 @@ export default function Navbar({ scrollToSection, showNav }) {
             }}
           >
             <Link href={"/"} style={{ textDecoration: "none", color: "white" }}>
-              <Image src={logoWhite} width={70} style={{ cursor: "pointer" }} />
+              <Image src={logo} width={70} style={{ cursor: "pointer" }} />
             </Link>
             {!isNavOpen ? (
               <MenuIcon
