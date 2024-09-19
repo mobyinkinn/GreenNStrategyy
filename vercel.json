@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/services/data-analysis" },
-    { "source": "/services-old", "destination": "/services" },
-    { "source": "/contact-page", "destination": "/contact" },
-    { "source": "/blog-old/:id", "destination": "/blog/:id" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
