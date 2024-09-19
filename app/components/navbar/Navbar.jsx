@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
 import logo from "@/public/assets/logo.png";
-import logobig from "@/public/assets/logoWhite.png";
+import logobig from "@/public/assets/logoSmall.png";
 import { useRouter } from "next/navigation";
 const navData = [
   { name: "The Team", id: "Banner", route: "/" },
