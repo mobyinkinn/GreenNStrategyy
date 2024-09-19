@@ -52,7 +52,7 @@ export default function Banner() {
     fade: true,
     speed: 2000,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     draggable: true,
     arrows: false,

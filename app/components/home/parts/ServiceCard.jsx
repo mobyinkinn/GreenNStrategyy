@@ -5,15 +5,20 @@ import { useEffect, useRef, useState } from "react";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import Slide from "@mui/material/Slide";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-export default function ServiceCard({ name, data }) {
+import { useRouter } from "next/navigation";
+export default function ServiceCard({ name, data, path }) {
   const [showButton, setShowButton] = useState(false);
-
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push(path); // Navigate to the desired route
+  };
   return (
     <Stack
       padding={"10px"}
       className="div-animated"
       onMouseEnter={() => setShowButton(true)}
       onMouseLeave={() => setShowButton(false)}
+      onClick={handleNavigate}
       sx={{
         "&:hover": {
           translate: "0 -20px",

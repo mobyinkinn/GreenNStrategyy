@@ -60,7 +60,7 @@ export default function Services() {
         }}
       >
         {serviceData.map((el) => (
-          <ServiceCard name={el.name} data={el.data} key={el.id} />
+          <ServiceCard name={el.name} data={el.data} key={el.id} path={el.path} />
         ))}
       </Stack>
     </Stack>

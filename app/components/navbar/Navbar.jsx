@@ -8,6 +8,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 import { useState } from "react";
 import logoWhite from "@/public/assets/logo.png";
+import logobig from "@/public/assets/logoWhite.png";
+import { useRouter } from "next/navigation";
 const navData = [
   { name: "The Team", id: "Banner", route: "/" },
   { name: "Our Services", id: "Services", route: "/" },
@@ -24,6 +26,7 @@ const translateOnLoad = keyframes`
 `;
 
 export default function Navbar({ scrollToSection, showNav }) {
+  const router = useRouter()
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   if (showNav) {
@@ -55,7 +58,12 @@ export default function Navbar({ scrollToSection, showNav }) {
           {/* <Link href={"/"} style={{ textDecoration: "none", color: "white" }}>
             GNS
           </Link> */}
-          <Image src={logoWhite} width={300} style={{ cursor: "pointer" }} />
+          <Image
+            src={logobig}
+            width={300}
+            style={{ cursor: "pointer" }}
+            onClick={()=>router.push("/")}
+          />
           <Stack direction={"row"}>
             {navData.map((el, i) => (
               <Typography
