@@ -174,7 +174,7 @@ function Card({ d }) {
             marginTop={{ xs: "15px", md: "30px" }}
           >
             {/* Left Column */}
-            <Box padding={{ md: "20px" }}>
+            <Box padding={{ lg:0, md: "20px" }}>
               <ul style={{ listStyleType: "disc" }}>
                 {d.content.leftColumn.map((item, index) => (
                   <li
