@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Navbar from '../../navbar/Navbar'
-import { Box, Stack, Typography } from '@mui/material'
-import ContactSection from '../../home/parts/ContactSection';
-import Footer from '../../footer/Footer';
+import React from "react";
+import Navbar from "../../navbar/Navbar";
+import { Box, Stack, Typography } from "@mui/material";
+import ContactSection from "../../home/parts/ContactSection";
+import Footer from "../../footer/Footer";
 
 const MarketResearch = () => {
   return (
@@ -42,13 +42,21 @@ const MarketResearch = () => {
               opacity: 0.2, // Adjust opacity here
             }}
           >
-            <source src="/assets/marres.mp4" type="video/mp4" />
+            <source
+              src="/assets/services/marketResearch.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </Box>
         <Stack pt={15} direction={"row"}>
           <Stack width={"40%"} alignItems={"center"} justifyContent={"center"}>
-            <Typography color="white" fontSize={"80px"} fontFamily={"Lora"} lineHeight={1.2}>
+            <Typography
+              color="white"
+              fontSize={"80px"}
+              fontFamily={"Lora"}
+              lineHeight={1.2}
+            >
               Market <br /> Research
             </Typography>
           </Stack>
@@ -77,6 +85,6 @@ const MarketResearch = () => {
       <Footer />
     </>
   );
-}
+};
 
-export default MarketResearch
+export default MarketResearch;

@@ -52,13 +52,18 @@ const WebsiteDevelopment = () => {
               opacity: 0.6, // Adjust opacity here
             }}
           >
-            <source src="/assets/webd.mp4" type="video/mp4" />
+            <source src="/assets/services/webDev.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Box>
         <Stack pt={15} direction={"row"}>
           <Stack width={"40%"} alignItems={"center"} justifyContent={"center"}>
-            <Typography color="white" fontSize={"80px"} fontFamily={"Lora"} lineHeight={1.2}>
+            <Typography
+              color="white"
+              fontSize={"80px"}
+              fontFamily={"Lora"}
+              lineHeight={1.2}
+            >
               Website <br /> Development
             </Typography>
           </Stack>

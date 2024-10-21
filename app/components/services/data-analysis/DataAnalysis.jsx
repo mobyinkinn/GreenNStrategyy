@@ -8,7 +8,6 @@
 
 // export default DataAnalysis
 
-
 "use client";
 
 import React from "react";
@@ -53,7 +52,7 @@ const DataAnalysis = () => {
               opacity: 0.2, // Adjust opacity here
             }}
           >
-            <source src="/assets/dataan.mp4" type="video/mp4" />
+            <source src="/assets/services/dataAnalyst.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </Box>

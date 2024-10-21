@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Box, Stack, Typography } from "@mui/material";
 import Navbar from "../navbar/Navbar";
@@ -6,55 +6,29 @@ import Image from "next/image";
 import img from "@/public/assets/Team1.png";
 import Footer from "../footer/Footer";
 
+import ceo from "@/public/assets/team/ceo.jpg";
+import businessStrategist from "@/public/assets/team/businessStrategist.jpg";
+import dataAnalyst from "@/public/assets/team/dataAnalyst.jpg";
+
 export default function About() {
   const data = [
     {
-      path: img,
+      path: ceo,
       Name: "Tristan Wilhelmsen",
       Designation: "CEO",
     },
     {
-      path: img,
+      path: businessStrategist,
       Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
+      Designation: "Business Stategist",
     },
     {
-      path: img,
+      path: dataAnalyst,
       Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
-    },
-    {
-      path: img,
-      Name: "Tristan Wilhelmsen",
-      Designation: "CEO",
+      Designation: "Data Analyst",
     },
   ];
-  
+
   return (
     <Box>
       <Navbar showNav={true} />
@@ -176,14 +150,14 @@ export default function About() {
                 bottom={-10}
               >
                 <Typography
-                  fontSize={{ xl: "30px", lg: "27px", md:"24px", sm: "9px" }}
+                  fontSize={{ xl: "30px", lg: "27px", md: "24px", sm: "9px" }}
                   fontFamily={"Lora"}
                 >
                   {d.Name}
                 </Typography>
                 <Typography
                   fontFamily={"Lora"}
-                  fontSize={{ xl: "27px", lg: "20px", md:"17px", sm: "7px" }}
+                  fontSize={{ xl: "27px", lg: "20px", md: "17px", sm: "7px" }}
                 >
                   {d.Designation}
                 </Typography>
