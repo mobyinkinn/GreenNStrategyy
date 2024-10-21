@@ -18,7 +18,7 @@ const ContactSection = () => {
     setPhone(newPhone);
   };
   return (
-    <Stack margin={"50px 0"}>
+    <Stack margin={"50px 0"} id={"contact"}>
       <Stack margin={{ xs: "0 30px", md: "30px 50px 0 50px" }}>
         <Typography
           color="white"

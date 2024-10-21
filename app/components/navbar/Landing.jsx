@@ -323,48 +323,7 @@ export default function Landing({ setShowNav }) {
               <Box width={"400px"} height={"400px"} position={"absolute"}>
                 <Image src={logo} alt="" fill objectFit="contain" />
               </Box>
-              {/* <Typography
-                sx={{
-                  fontSize: {
-                    xs: "1.6rem",
-                    md: "2rem",
-                    lg: "10rem",
-                  },
-                  color: "#008D46",
-                  fontWeight: "bold",
-                  fontFamily: "popins",
-                }}
-              >
-                <span className="letter">G</span>
-                <span className="letter">r</span>
-                <span className="letter">e</span>
-                <span className="letter">e</span>
-                <span className="letter">n</span>
-                &nbsp;
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: {
-                    xs: "1.6rem",
-                    md: "2rem",
-                    lg: "10rem",
-                  },
-
-                  fontWeight: "bold",
-                  fontFamily: "popins",
-                }}
-              >
-                <span className="letter">&</span>
-                <span className="letter">&nbsp;</span>
-                <span className="letter">S</span>
-                <span className="letter">t</span>
-                <span className="letter">r</span>
-                <span className="letter">a</span>
-                <span className="letter">t</span>
-                <span className="letter">e</span>
-                <span className="letter">g</span>
-                <span className="letter">y</span>
-              </Typography> */}
+              
             </Stack>
           </Stack>
         </Stack>

@@ -1,13 +1,64 @@
+"use client"
+
 import { Box, Stack, Typography } from "@mui/material";
 import Navbar from "../navbar/Navbar";
 import Image from "next/image";
-import img from "@/public/assets/tempBanner.jpg";
+import img from "@/public/assets/Team1.png";
+import Footer from "../footer/Footer";
 
 export default function About() {
+  const data = [
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+    {
+      path: img,
+      Name: "Tristan Wilhelmsen",
+      Designation: "CEO",
+    },
+  ];
+  
   return (
     <Box>
-      <Navbar />
-      <Stack position={"relative"} height={"40vh"} width={"90vw"}>
+      <Navbar showNav={true} />
+      {/* <Stack position={"relative"} height={"40vh"} width={"90vw"}>
         <Image src={img} fill objectFit="cover" alt="" />
       </Stack>
       <Stack
@@ -19,7 +70,6 @@ export default function About() {
         className="about-container"
       >
         <h1 style={{ color: "limegreen" }}>About Us</h1>
-
         <Stack>
           Green & Strategy is a Data Analysis and Strategy consulting firm,
           specialized in providing you with the best strategies to generate
@@ -73,7 +123,76 @@ export default function About() {
             market research tools.
           </Box>
         </Stack>
+      </Stack> */}
+      <Stack
+        alignItems={"center"}
+        justifyContent={"center"}
+        height={{ xl: "100vh", md: "100vh", xs: "50vh" }}
+      >
+        <Typography
+          fontSize={{ xl: "4rem", lg: "4rem", md: "3rem", xs: "2.5rem" }}
+          color="white"
+          fontFamily={"Lora"}
+        >
+          About Us
+        </Typography>
       </Stack>
+      <Stack padding={{ xl: "0 6%", md: "0 6%", xs: "0 4%" }}>
+        <Typography
+          fontSize={{ xl: "4rem", lg: "4rem", md: "3rem", xs: "2.5rem" }}
+          color="white"
+          fontFamily={"Lora"}
+        >
+          Our Team
+        </Typography>
+        <Stack
+          bgcolor={"#333"}
+          padding={{ xl: 3, sm: "0 18px" }}
+          direction={"row"}
+          flexWrap={"wrap"}
+          gap={{ xl: 5, md: "40px", sm: "17px" }}
+          justifyContent={"center"}
+          alignItems={"center"}
+          m={"20px 0 40px 0"}
+        >
+          {data.map((d) => (
+            <Stack
+              position={"relative"}
+              height={{ xl: "50vh", lg: "46vh", md: "35vh", sm: "15vh" }}
+              width={"30%"}
+            >
+              <Image
+                src={d.path}
+                objectPosition="bottom"
+                objectFit="contain"
+                fill
+                alt=""
+              />
+              <Stack
+                position={"absolute"}
+                bgcolor={"white"}
+                right={-10}
+                padding={{ xl: 1, sm: "3px" }}
+                bottom={-10}
+              >
+                <Typography
+                  fontSize={{ xl: "30px", lg: "27px", md:"24px", sm: "9px" }}
+                  fontFamily={"Lora"}
+                >
+                  {d.Name}
+                </Typography>
+                <Typography
+                  fontFamily={"Lora"}
+                  fontSize={{ xl: "27px", lg: "20px", md:"17px", sm: "7px" }}
+                >
+                  {d.Designation}
+                </Typography>
+              </Stack>
+            </Stack>
+          ))}
+        </Stack>
+      </Stack>
+      <Footer />
     </Box>
   );
 }

@@ -2,9 +2,9 @@ import { Box } from "@mui/system";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "@/public/assets/a-random-logo.png";
-import img3 from "@/public/assets/a-random-logo3.png";
-import img4 from "@/public/assets/a-random-logo4.png";
+import img from "@/public/assets/client1.jpg";
+import img3 from "@/public/assets/client2.jpg";
+import img4 from "@/public/assets/client3.jpg";
 import Image from "next/image";
 import { Stack, Typography } from "@mui/material";
 

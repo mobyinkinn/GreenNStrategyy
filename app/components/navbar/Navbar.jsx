@@ -11,9 +11,9 @@ import logo from "@/public/assets/logo.png";
 import logobig from "@/public/assets/logoSmall.png";
 import { useRouter } from "next/navigation";
 const navData = [
-  { name: "The Team", id: "Banner", route: "/" },
-  { name: "Our Services", id: "Services", route: "/" },
-  { name: "Contact us", id: "Contact", route: "/" },
+  { name: "The Team", route: "/About" },
+  { name: "Our Services", id: "Services", route: "/#service" },
+  { name: "Contact us", id: "Contact", route: "/#contact" },
 ];
 
 const translateOnLoad = keyframes`
@@ -28,7 +28,14 @@ const translateOnLoad = keyframes`
 export default function Navbar({ scrollToSection, showNav }) {
   const router = useRouter()
   const [isNavOpen, setIsNavOpen] = useState(false);
-
+  const navigate = useRouter()
+  const handlenavigate = (el) => {
+    if(el.id){
+   
+    scrollToSection(el.id)
+    }else 
+    navigate.push("/About");
+  };
   if (showNav) {
     return (
       <Stack>
@@ -62,28 +69,38 @@ export default function Navbar({ scrollToSection, showNav }) {
             src={logobig}
             width={300}
             style={{ cursor: "pointer" }}
-            onClick={()=>router.push("/")}
+            onClick={() => router.push("/")}
           />
           <Stack direction={"row"}>
             {navData.map((el, i) => (
-              <Typography
+              <Link
                 key={i}
-                onClick={() => scrollToSection(el.id)}
-                fontFamily={"Lora"}
-                margin={"0 20px"}
-                color="white"
-                fontSize={"1.4rem"}
-                sx={{ cursor: "pointer", "&:hover": { color: "limegreen" } }}
+                href={el.route}
+                legacyBehavior={true}
+                scroll={true}
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "1px solid #333",
+                }}
               >
-                {el.name}
-              </Typography>
+                <Typography
+                  key={i}
+                  // onClick={() => handlenavigate(el)}
+                  fontFamily={"Lora"}
+                  margin={"0 20px"}
+                  color="white"
+                  fontSize={"1.4rem"}
+                  sx={{ cursor: "pointer", "&:hover": { color: "#005900" } }}
+                >
+                  {el.name}
+                </Typography>
+              </Link>
             ))}
           </Stack>
         </Stack>
 
         {/* for mobile devices */}
         <Stack
-          bgcolor={"#1b1919"}
           direction={"column"}
           display={{
             lg: "none",
@@ -91,6 +108,7 @@ export default function Navbar({ scrollToSection, showNav }) {
         >
           <Stack
             direction={"row"}
+            bgcolor={"#1b1919"}
             width={"100%"}
             className=""
             sx={{
@@ -161,6 +179,8 @@ export default function Navbar({ scrollToSection, showNav }) {
                     <Link
                       key={i}
                       href={el.route}
+                      legacyBehavior={true}
+                      scroll={true}
                       style={{
                         textDecoration: "none",
                         borderBottom: "1px solid #333",
