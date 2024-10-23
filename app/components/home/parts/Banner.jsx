@@ -64,7 +64,7 @@ export default function Banner() {
     {
       id: 1,
       head: "#1 Data Analysis and Strategy Firm in the",
-      head2: "USA",
+      head2: "UAE",
       content:
         "We deliver the bullet proof strategy for your business success, driven by invalueable data and in depth research tailored specifically for your brand.",
       src: banner1,
@@ -174,7 +174,7 @@ function Card({ d }) {
             marginTop={{ xs: "15px", md: "30px" }}
           >
             {/* Left Column */}
-            <Box padding={{ lg:0, md: "20px" }}>
+            <Box padding={{ lg: 0, md: "20px" }}>
               <ul style={{ listStyleType: "disc" }}>
                 {d.content.leftColumn.map((item, index) => (
                   <li

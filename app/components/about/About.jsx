@@ -43,7 +43,7 @@ export default function About() {
         padding={"10vh 5vw"}
         className="about-container"
       >
-        <h1 style={{ color: "limegreen" }}>About Us</h1>
+        <h1 style={{ color: "#005900" }}>About Us</h1>
         <Stack>
           Green & Strategy is a Data Analysis and Strategy consulting firm,
           specialized in providing you with the best strategies to generate
@@ -55,7 +55,7 @@ export default function About() {
           research and data analysis
         </Stack>
         <Stack gap={"5px"}>
-          <h2 style={{ color: "limegreen" }}>How do we work?</h2>
+          <h2 style={{ color: "#005900" }}>How do we work?</h2>
           <Box>
             Our process begins with assessing and understanding our clients'
             needs, defining their business challenges, and establishing mutual
@@ -66,7 +66,7 @@ export default function About() {
           </Box>
         </Stack>
         <Stack gap={"5px"}>
-          <h2 style={{ color: "limegreen" }}>
+          <h2 style={{ color: "#005900" }}>
             Your best provider for Data Analysis and Strategies in UAE
           </h2>
           <Box>
@@ -76,7 +76,7 @@ export default function About() {
           </Box>
         </Stack>
         <Stack gap={"5px"}>
-          <h2 style={{ color: "limegreen" }}>Market Research</h2>
+          <h2 style={{ color: "#005900" }}>Market Research</h2>
           <ul className="market-research">
             <li>Campaign Creation</li>
             <li>Lead Generation</li>
@@ -90,7 +90,7 @@ export default function About() {
           </ul>
         </Stack>
         <Stack gap={"5px"}>
-          <h2 style={{ color: "limegreen" }}>Our Vision</h2>
+          <h2 style={{ color: "#005900" }}>Our Vision</h2>
           <Box>
             Our vision is to become the UAE's most trusted advisor, delivering
             top-tier Data Analysis and Strategic Insights through cutting-edge

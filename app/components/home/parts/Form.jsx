@@ -20,8 +20,8 @@
 //         }}
 //       >
 //         <Box fontSize={"3rem"}>
-//           Where <span style={{ color: "limegreen" }}>Innovation </span> <br />{" "}
-//           Meets <span style={{ color: "limegreen" }}>Execution</span>
+//           Where <span style={{ color: "#005900" }}>Innovation </span> <br />{" "}
+//           Meets <span style={{ color: "#005900" }}>Execution</span>
 //         </Box>
 //         <Typography marginTop={"10px"}>
 //           Book a call with our expert now
@@ -122,12 +122,12 @@
 //           backgroundPosition: "center",
 //           height: "350px", // Add height to ensure visibility
 //           width: "50%", // Adjust width if necessary
-          
+
 //         }}
 //       >
 //         <Box fontSize={"3rem"}>
-//           Where <span style={{ color: "limegreen" }}>Innovation </span> <br />{" "}
-//           Meets <span style={{ color: "limegreen" }}>Execution</span>
+//           Where <span style={{ color: "#005900" }}>Innovation </span> <br />{" "}
+//           Meets <span style={{ color: "#005900" }}>Execution</span>
 //         </Box>
 //         <Typography marginTop={"10px"}>
 //           Book a call with our expert now
@@ -207,7 +207,6 @@
 //   );
 // }
 
-
 import { Box, Stack, Typography } from "@mui/material";
 import bgImage from "@/public/assets/Shape-dots-arrow-right.png";
 
@@ -246,8 +245,8 @@ export default function Form() {
           fontSize={"3rem"}
           sx={{ position: "relative", zIndex: 1 }} // Ensure text is above the pseudo-element
         >
-          Where <span style={{ color: "limegreen" }}>Innovation </span> <br />{" "}
-          Meets <span style={{ color: "limegreen" }}>Execution</span>
+          Where <span style={{ color: "#005900" }}>Innovation </span> <br />{" "}
+          Meets <span style={{ color: "#005900" }}>Execution</span>
         </Box>
         <Typography marginTop={"10px"} sx={{ position: "relative", zIndex: 1 }}>
           Book a call with our expert now

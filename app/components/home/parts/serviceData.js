@@ -2,13 +2,13 @@ export const serviceData = [
   {
     id: 0,
     name: "Data Analysis & Strategy",
-    data: "Stay ahead of your competitors with our market research expertise. ",
+    data: "Seize your market, generate leads, and enhance your ROI with our expert strategists",
     path: "/Services/data-analysis",
   },
   {
     id: 1,
     name: "Market Research",
-    data: "Seize your market, generate leads, and enhance your ROI with our expert strategists",
+    data: "Stay ahead of your competitors with our market research expertise. ",
     path: "/Services/market-research",
   },
   {

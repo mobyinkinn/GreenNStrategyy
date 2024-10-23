@@ -175,25 +175,25 @@ export default function Footer() {
           <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <LocationOnIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              The Metropolis, BusinessBay
+              Dubai, UAE
             </Typography>
           </Stack>
           <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              +9715 61728827
+              +971 543867645
             </Typography>
           </Stack>
           <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <EmailIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              info@gns.com
+              yazan@greenandstrategy.com
             </Typography>
           </Stack>
           <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <InstagramIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              GreenandStrategy
+              greenandstrategy
             </Typography>
           </Stack>
         </Stack>

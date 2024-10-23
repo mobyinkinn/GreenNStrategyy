@@ -16,7 +16,7 @@ export default function Services() {
     >
       {/* <h2
         style={{
-          color: "limegreen",
+          color: "#005900",
           marginBottom: "20px",
           fontSize: "2rem",
           textAlign: "center",
@@ -61,7 +61,12 @@ export default function Services() {
         }}
       >
         {serviceData.map((el) => (
-          <ServiceCard name={el.name} data={el.data} key={el.id} path={el.path} />
+          <ServiceCard
+            name={el.name}
+            data={el.data}
+            key={el.id}
+            path={el.path}
+          />
         ))}
       </Stack>
     </Stack>

@@ -181,7 +181,7 @@ const ContactSection = () => {
           <MuiTelInput
             value={phone}
             onChange={handlePhoneChange}
-            defaultCountry="IN"
+            defaultCountry="AE"
             sx={{
               "& .MuiInputBase-input::placeholder": {
                 color: "#fff",

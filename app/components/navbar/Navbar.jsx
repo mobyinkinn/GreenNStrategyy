@@ -26,15 +26,13 @@ const translateOnLoad = keyframes`
 `;
 
 export default function Navbar({ scrollToSection, showNav }) {
-  const router = useRouter()
+  const router = useRouter();
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const navigate = useRouter()
+  const navigate = useRouter();
   const handlenavigate = (el) => {
-    if(el.id){
-   
-    scrollToSection(el.id)
-    }else 
-    navigate.push("/About");
+    if (el.id) {
+      scrollToSection(el.id);
+    } else navigate.push("/About");
   };
   if (showNav) {
     return (
@@ -140,7 +138,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                     xs: "40px",
                     smm: "50px",
                   },
-                  color: "limegreen",
+                  color: "#005900",
                 }}
                 onClick={() => setIsNavOpen(true)}
               />
@@ -149,7 +147,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                 sx={{
                   width: "60px",
                   height: "60px",
-                  color: "limegreen",
+                  color: "#005900",
                 }}
                 onClick={() => setIsNavOpen(false)}
               />
@@ -190,7 +188,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                         margin={"10px 20px"}
                         color={"white"}
                         fontSize={"1.4rem"}
-                        sx={{ "&:hover": { color: "limegreen" } }}
+                        sx={{ "&:hover": { color: "#005900" } }}
                       >
                         {el.name}
                       </Typography>

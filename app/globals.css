@@ -166,7 +166,7 @@ html {
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color: limegreen;
+  background-color: #005900;
 }
 
 .div-animated::after {
@@ -178,7 +178,7 @@ html {
 } */
 body {
   cursor: none;
-  background-color: #111111; 
+  background-color: #111111;
   background-image: url("/assets/11.jpg"); /* Texture image */
   mix-blend-mode: difference; /* Blend mode to overlay the image with the background color */
   background-size: contain;
@@ -213,7 +213,7 @@ body {
   content: "";
   width: 0;
   height: 4px;
-  background-color:#005900;
+  background-color: #005900;
   margin: 0 auto;
   transition: all 0.3s ease-out;
   border-radius: 30%;
