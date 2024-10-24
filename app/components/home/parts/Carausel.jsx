@@ -113,18 +113,26 @@ var settingsRight = {
 
 export default function Carausal() {
   return (
-    <Box padding={{sm:"50px 20px",xl:"50px 50px"}}>
+    <Box padding={{ sm: "50px 20px", xl: "50px 50px" }}>
       <Stack direction={"row"} alignItems={"Center"} pb={2}>
-        <Typography color="white" fontFamily={"Lora"} fontSize={{xl:"70px",xll:"55px",lg:"40px",md:"35px",sm:"30px"}}>
+        <Typography
+          color="white"
+          fontFamily={"Lora"}
+          fontSize={{
+            xl: "70px",
+            xll: "55px",
+            lg: "40px",
+            md: "35px",
+            sm: "30px",
+          }}
+        >
           Our Clients
         </Typography>
       </Stack>
       <Stack gap={"40px"}>
         <Slider {...settings}>
           {carausel.map((el, i) => {
-            return (
-              <Images el={el} />
-            );
+            return <Images el={el} />;
           })}
         </Slider>
         <Slider {...settingsRight}>
@@ -137,15 +145,10 @@ export default function Carausal() {
   );
 }
 
-
-function Images({el}){
-return <Stack alignItems={"center"} justifyContent={"center"} display={"flex"}>
-                <Image
-                  width={100}
-                  height={100}
-                  src={el.img}
-                  alt=""
-                  style={{ filter: "grayscale(100%)" }}
-                />
-              </Stack>
+function Images({ el }) {
+  return (
+    <Stack alignItems={"center"} justifyContent={"center"} display={"flex"}>
+      <Image width={100} height={100} src={el.img} alt="" />
+    </Stack>
+  );
 }

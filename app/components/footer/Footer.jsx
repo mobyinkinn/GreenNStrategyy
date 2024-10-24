@@ -7,7 +7,10 @@ import HomeIcon from "@mui/icons-material/Home";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { useRouter } from "next/navigation";
+
 export default function Footer() {
+  const router = useRouter();
   return (
     // <Stack
     //   width={"100%"}
@@ -178,19 +181,35 @@ export default function Footer() {
               Dubai, UAE
             </Typography>
           </Stack>
-          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
-            <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
-            <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              +971 543867645
-            </Typography>
-          </Stack>
-          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
-            <EmailIcon sx={{ color: "#9FAAA0" }} />
-            <Typography color="#9FAAA0" fontFamily={"Lora"}>
-              yazan@greenandstrategy.com
-            </Typography>
-          </Stack>
-          <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
+          <a href="tel:+971543867645">
+            <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
+              <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
+              <Typography color="#9FAAA0" fontFamily={"Lora"}>
+                +971 543867645
+              </Typography>
+            </Stack>
+          </a>
+          <a
+            href="mailto:yazan@greenandstrategy.com"
+            style={{ textDecoration: "none" }}
+          >
+            <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
+              <EmailIcon sx={{ color: "#9FAAA0" }} />
+              <Typography color="#9FAAA0" fontFamily={"Lora"}>
+                yazan@greenandstrategy.com
+              </Typography>
+            </Stack>
+          </a>
+          <Stack
+            direction={{ lg: "row" }}
+            alignItems={"center"}
+            gap={"10px"}
+            onClick={() =>
+              router.push(
+                "https://www.instagram.com/greenandstrategy?igsh=ZnZ3bzI4NW52bWRm"
+              )
+            }
+          >
             <InstagramIcon sx={{ color: "#9FAAA0" }} />
             <Typography color="#9FAAA0" fontFamily={"Lora"}>
               greenandstrategy
