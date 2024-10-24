@@ -181,7 +181,7 @@ export default function Footer() {
               Dubai, UAE
             </Typography>
           </Stack>
-          <a href="tel:+971543867645">
+          <a href="tel:+971543867645" style={{ textDecoration: "none" }}>
             <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
               <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
               <Typography color="#9FAAA0" fontFamily={"Lora"}>
