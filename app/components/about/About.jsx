@@ -14,17 +14,17 @@ export default function About() {
   const data = [
     {
       path: ceo,
-      Name: "Tristan Wilhelmsen",
+      Name: "Yazan Akkad",
       Designation: "CEO",
     },
     {
       path: businessStrategist,
-      Name: "Tristan Wilhelmsen",
+      Name: "Omar AL Mari",
       Designation: "Business Stategist",
     },
     {
       path: dataAnalyst,
-      Name: "Tristan Wilhelmsen",
+      Name: "Maryam Haghshenaz",
       Designation: "Data Analyst",
     },
   ];
@@ -139,6 +139,9 @@ export default function About() {
                 src={d.path}
                 objectPosition="bottom"
                 objectFit="contain"
+                style={{
+                  filter: "grayscale(100%)",
+                }}
                 fill
                 alt=""
               />
