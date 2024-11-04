@@ -2,7 +2,7 @@ export const serviceData = [
   {
     id: 0,
     name: "Data Analysis & Strategy",
-    data: "Seize your market, generate leads, and enhance your ROI with our expert strategists",
+    data: "Seize your market, generate leads, and enhance your ROI with our expert strategists.",
     path: "/Services/data-analysis",
   },
   {
@@ -14,7 +14,7 @@ export const serviceData = [
   {
     id: 2,
     name: "Digital Marketing",
-    data: "Increase your digital presence, understand your customer needs, and adopt new technologies",
+    data: "Increase your digital presence, understand your customer needs, and adopt new technologies.",
     path: "/Services/digital-marketing",
   },
   {

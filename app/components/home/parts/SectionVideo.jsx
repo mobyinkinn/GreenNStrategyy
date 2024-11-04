@@ -45,7 +45,7 @@ const SectionVideo = () => {
             Our process begins with assessing and understanding our clients'
             needs, defining their business challenges, and establishing mutual
             trust. We then conduct comprehensive market research through
-            surveys, a s well as primary and secondary research, to gather the
+            surveys, as well as primary and secondary research, to gather the
             necessary data. Our expert analysts and strategists meticulously
             analyze this data, transforming it into actionable solutions.
           </Typography>
