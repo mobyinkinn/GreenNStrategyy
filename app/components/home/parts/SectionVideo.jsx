@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
+
 const SectionVideo = () => {
   return (
     <Stack
@@ -39,6 +40,7 @@ const SectionVideo = () => {
             color="white"
             fontSize={{ md: "20px" }}
             fontFamily={"Lora"}
+            textAlign={"justify"}
           >
             Our process begins with assessing and understanding our clients'
             needs, defining their business challenges, and establishing mutual

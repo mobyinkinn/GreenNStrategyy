@@ -19,8 +19,8 @@ export default function About() {
     },
     {
       path: businessStrategist,
-      Name: "Omar AL Mari",
-      Designation: "Business Stategist",
+      Name: "Omar Al Mari",
+      Designation: "Business Strategist",
     },
     {
       path: dataAnalyst,
@@ -101,7 +101,7 @@ export default function About() {
       <Stack
         alignItems={"center"}
         justifyContent={"center"}
-        height={{ xl: "100vh", md: "100vh", xs: "50vh" }}
+        height={{ xl: "100vh", md: "100vh", xs: "100vh" }}
       >
         <Typography
           fontSize={{ xl: "4rem", lg: "4rem", md: "3rem", xs: "2.5rem" }}
@@ -109,6 +109,23 @@ export default function About() {
           fontFamily={"Lora"}
         >
           About Us
+        </Typography>
+        <Typography
+          fontSize={{ xl: "1rem", lg: "1rem", md: "1rem", xs: "0.8rem" }}
+          width={{ md: "70%", xs: "90%" }}
+          textAlign={"center"}
+          color="white"
+          fontFamily={"Lora"}
+        >
+          Green & Strategy is a Data Analysis and Strategy consulting firm,
+          specialized in providing you with the best strategies to skyrocket
+          your sales, generate leads, maximize ROI, dominate your market
+          competitors, understand your customer needs, and establish a solid
+          digital presence.
+          <br />
+          <br />
+          Green & Strategy is en route to become the number 1 trusted local
+          strategy consultancy in the UAE.
         </Typography>
       </Stack>
       <Stack padding={{ xl: "0 6%", md: "0 6%", xs: "0 4%" }}>

@@ -20,7 +20,7 @@ export const serviceData = [
   {
     id: 3,
     name: "Website Development",
-    data: "Being like everyone else is boring. We will make you stand out from the endless crown of websites.",
+    data: "Being like everyone else is boring. We will make you stand out from the endless crowd of websites.",
     path: "/Services/website-development",
   },
 ];
