@@ -69,7 +69,6 @@ const WebsiteDevelopment = () => {
             <Typography
               color="white"
               fontSize={{ lg: "80px", md: "60px", xs: "30px" }}
-              fontFamily={"Poppins"}
               textAlign={{ md: "left", xs: "center" }}
               lineHeight={1.2}
             >
@@ -81,7 +80,6 @@ const WebsiteDevelopment = () => {
               color="white"
               textAlign={"justify"}
               fontSize={{ lg: "20px", md: "18px", xs: "15px" }}
-              fontFamily={"Poppins"}
               lineHeight={1.8}
             >
               Being like everyone else is boring. We specialize in website

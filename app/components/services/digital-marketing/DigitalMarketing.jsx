@@ -72,7 +72,6 @@ const DigitalMarketing = () => {
             <Typography
               color="white"
               fontSize={{ lg: "80px", md: "60px", xs: "30px" }}
-              fontFamily={"Poppins"}
               textAlign={{ md: "left", xs: "center" }}
               lineHeight={1.2}
             >
@@ -84,7 +83,6 @@ const DigitalMarketing = () => {
               color="white"
               fontSize={{ lg: "20px", md: "18px", xs: "15px" }}
               textAlign={"justify"}
-              fontFamily={"Poppins"}
               lineHeight={1.8}
             >
               Increase your brand awareness and grow your market presence with

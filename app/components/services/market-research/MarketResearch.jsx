@@ -62,7 +62,6 @@ const MarketResearch = () => {
             <Typography
               color="white"
               fontSize={{ lg: "80px", md: "60px", xs: "30px" }}
-              fontFamily={"Poppins"}
               lineHeight={1.2}
               textAlign={{ md: "left", xs: "center" }}
             >
@@ -74,7 +73,6 @@ const MarketResearch = () => {
               color="white"
               fontSize={{ lg: "20px", md: "18px", xs: "15px" }}
               textAlign={"justify"}
-              fontFamily={"Poppins"}
               lineHeight={1.6}
             >
               Stay ahead of your competitors with our cutting-edge market

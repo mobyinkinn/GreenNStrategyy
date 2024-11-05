@@ -19,7 +19,6 @@ const SectionVideo = () => {
         <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
           <Typography
             color="white"
-            fontFamily={"Poppins"}
             fontSize={{ xs: "25px", sm: "40px", lg: "45px", xl: "60px" }}
           >
             <span style={{ color: "#005900", fontWeight: "bold" }}>How</span> Do
@@ -39,7 +38,6 @@ const SectionVideo = () => {
           <Typography
             color="white"
             fontSize={{ md: "20px" }}
-            fontFamily={"Poppins"}
             textAlign={"justify"}
           >
             Our process begins with assessing and understanding our clients'

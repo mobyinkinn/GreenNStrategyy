@@ -46,12 +46,11 @@ export default function ServiceCard({ name, data, path }) {
           <BarChartIcon
             sx={{ height: "60px", width: "60px", color: "#005900" }}
           />
-          <h2 style={{ textAlign: "center", fontFamily: "Poppins" }}>{name}</h2>
+          <h2 style={{ textAlign: "center" }}>{name}</h2>
 
           <Typography
             marginTop={"5px"}
             sx={{ textAlign: "center" }}
-            fontFamily={"Poppins"}
             color="#808080"
           >
             {data}

@@ -42,11 +42,7 @@ export default function Services() {
         </span>
       </Stack> */}
       <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
-        <Typography
-          color="white"
-          fontFamily={"Poppins"}
-          fontSize={{ xs: "40px", md: "70px" }}
-        >
+        <Typography color="white" fontSize={{ xs: "40px", md: "70px" }}>
           <span style={{ color: "#005900", fontWeight: "bold" }}>What</span> We
           do
         </Typography>

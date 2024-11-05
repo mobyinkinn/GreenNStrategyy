@@ -177,16 +177,12 @@ export default function Footer() {
           </Stack>
           <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
             <LocationOnIcon sx={{ color: "#9FAAA0" }} />
-            <Typography color="#9FAAA0" fontFamily={"Poppins"}>
-              Dubai, UAE
-            </Typography>
+            <Typography color="#9FAAA0">Dubai, UAE</Typography>
           </Stack>
           <a href="tel:+971543867645" style={{ textDecoration: "none" }}>
             <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
               <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
-              <Typography color="#9FAAA0" fontFamily={"Poppins"}>
-                +971 543867645
-              </Typography>
+              <Typography color="#9FAAA0">+971 543867645</Typography>
             </Stack>
           </a>
           <a
@@ -195,7 +191,7 @@ export default function Footer() {
           >
             <Stack direction={{ lg: "row" }} alignItems={"center"} gap={"10px"}>
               <EmailIcon sx={{ color: "#9FAAA0" }} />
-              <Typography color="#9FAAA0" fontFamily={"Poppins"}>
+              <Typography color="#9FAAA0">
                 yazan@greenandstrategy.com
               </Typography>
             </Stack>
@@ -211,9 +207,7 @@ export default function Footer() {
             }
           >
             <InstagramIcon sx={{ color: "#9FAAA0" }} />
-            <Typography color="#9FAAA0" fontFamily={"Poppins"}>
-              greenandstrategy
-            </Typography>
+            <Typography color="#9FAAA0">greenandstrategy</Typography>
           </Stack>
         </Stack>
       </Stack>

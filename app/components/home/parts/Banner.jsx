@@ -149,10 +149,7 @@ function Card({ d }) {
         color={"#ddd"}
         padding={{ xs: "20px 0 10px 10px", md: "50px" }}
       >
-        <Typography
-          fontSize={{ xs: "2rem", md: "1.8rem", lg: "2.5rem" }}
-          fontFamily={"Poppins"}
-        >
+        <Typography fontSize={{ xs: "2rem", md: "1.8rem", lg: "2.5rem" }}>
           {d.head} <span style={{ color: "#005900" }}>{d.head2}</span>
         </Typography>
         <Box
@@ -164,7 +161,7 @@ function Card({ d }) {
             bgcolor: "#655d5d",
           }}
         />
-        {/* <Typography fontSize={"1.4rem"} fontFamily={"Poppins"} marginTop={"50px"}>
+        {/* <Typography fontSize={"1.4rem"}  marginTop={"50px"}>
           {d.content}
         </Typography> */}
         {Array.isArray(d.content?.leftColumn) &&
@@ -182,7 +179,6 @@ function Card({ d }) {
                     key={index}
                     style={{
                       fontSize: "1.4rem",
-                      fontFamily: "Poppins",
                       marginBottom: "15px",
                     }}
                   >
@@ -199,7 +195,6 @@ function Card({ d }) {
                     key={index}
                     style={{
                       fontSize: "1.4rem",
-                      fontFamily: "Poppins",
                       marginBottom: "15px",
                     }}
                   >
@@ -210,11 +205,7 @@ function Card({ d }) {
             </Box>
           </Stack>
         ) : (
-          <Typography
-            fontSize={"1.4rem"}
-            fontFamily={"Poppins"}
-            marginTop={"10px"}
-          >
+          <Typography fontSize={"1.4rem"} marginTop={"10px"}>
             {d.content}
           </Typography>
         )}

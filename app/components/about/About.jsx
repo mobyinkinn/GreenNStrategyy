@@ -106,7 +106,6 @@ export default function About() {
         <Typography
           fontSize={{ xl: "4rem", lg: "4rem", md: "3rem", xs: "2.5rem" }}
           color="white"
-          fontFamily={"Poppins"}
         >
           About Us
         </Typography>
@@ -115,7 +114,6 @@ export default function About() {
           width={{ md: "70%", xs: "90%" }}
           textAlign={"center"}
           color="white"
-          fontFamily={"Poppins"}
         >
           Green & Strategy is a Data Analysis and Strategy consulting firm,
           specialized in providing you with the best strategies to skyrocket
@@ -132,7 +130,6 @@ export default function About() {
         <Typography
           fontSize={{ xl: "4rem", lg: "4rem", md: "3rem", xs: "2.5rem" }}
           color="white"
-          fontFamily={"Poppins"}
         >
           Our Team
         </Typography>
@@ -177,12 +174,10 @@ export default function About() {
               >
                 <Typography
                   fontSize={{ xl: "30px", lg: "27px", md: "24px", sm: "9px" }}
-                  fontFamily={"Poppins"}
                 >
                   {d.Name}
                 </Typography>
                 <Typography
-                  fontFamily={"Poppins"}
                   fontSize={{ xl: "27px", lg: "20px", md: "17px", sm: "7px" }}
                 >
                   {d.Designation}
