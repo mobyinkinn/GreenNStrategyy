@@ -56,22 +56,31 @@ const WebsiteDevelopment = () => {
             Your browser does not support the video tag.
           </video>
         </Box>
-        <Stack pt={15} direction={"row"}>
-          <Stack width={"40%"} alignItems={"center"} justifyContent={"center"}>
+        <Stack
+          pt={15}
+          direction={{ md: "row" }}
+          margin={{ xs: "0 20px", md: "0 50px" }}
+        >
+          <Stack
+            width={{ md: "40%" }}
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
             <Typography
               color="white"
-              fontSize={"80px"}
+              fontSize={{ lg: "80px", md: "60px", xs: "30px" }}
               fontFamily={"Lora"}
+              textAlign={{ md: "left", xs: "center" }}
               lineHeight={1.2}
             >
               Website <br /> Development
             </Typography>
           </Stack>
-          <Stack width={"60%"} padding={"0 60px"}>
+          <Stack width={{ md: "60%" }} padding={{ smm: "0 60px" }}>
             <Typography
               color="white"
-              fontSize={"23px"}
               textAlign={"justify"}
+              fontSize={{ lg: "20px", md: "18px", xs: "15px" }}
               fontFamily={"Lora"}
               lineHeight={1.8}
             >
