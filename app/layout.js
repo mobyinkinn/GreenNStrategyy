@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <ThemeProvider theme={theme}>
-        <body className={roboto.className}>
+        <body>
           <CustomCursor />
           {children}
         </body>
