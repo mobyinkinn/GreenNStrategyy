@@ -129,7 +129,7 @@ export default function Carausal() {
       <Stack direction={"row"} alignItems={"Center"} pb={2}>
         <Typography
           color="white"
-          fontFamily={"Lora"}
+          fontFamily={"Poppins"}
           fontSize={{
             xl: "70px",
             xll: "55px",

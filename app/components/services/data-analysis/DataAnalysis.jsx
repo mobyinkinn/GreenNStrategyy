@@ -69,7 +69,7 @@ const DataAnalysis = () => {
             <Typography
               color="white"
               fontSize={{ lg: "80px", md: "60px", xs: "30px" }}
-              fontFamily={"Lora"}
+              fontFamily={"Poppins"}
               textAlign={{ md: "left", xs: "center" }}
             >
               Data Analysis <br /> & Strategy
@@ -80,7 +80,7 @@ const DataAnalysis = () => {
               color="white"
               fontSize={{ lg: "20px", md: "18px", xs: "15px" }}
               textAlign={"justify"}
-              fontFamily={"Lora"}
+              fontFamily={"Poppins"}
               lineHeight={1.8}
             >
               We specialize in delivering tailored strategies that drive

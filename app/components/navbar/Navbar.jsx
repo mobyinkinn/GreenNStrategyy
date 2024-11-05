@@ -84,7 +84,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                 <Typography
                   key={i}
                   // onClick={() => handlenavigate(el)}
-                  fontFamily={"Lora"}
+                  fontFamily={"Poppins"}
                   margin={"0 20px"}
                   color="white"
                   fontSize={"1.4rem"}

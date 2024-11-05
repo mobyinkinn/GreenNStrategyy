@@ -3,6 +3,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Roboto } from "@next/font/google";
+import { Poppins } from "@next/font/google";
 import { createTheme, ThemeProvider } from "@mui/material";
 import CustomCursor from "./components/CustomCursor";
 
@@ -20,7 +21,7 @@ const theme = createTheme({
   },
 });
 
-const roboto = Roboto({
+const roboto = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <ThemeProvider theme={theme}>
-        <body>
+        <body className={roboto.className}>
           <CustomCursor />
           {children}
         </body>

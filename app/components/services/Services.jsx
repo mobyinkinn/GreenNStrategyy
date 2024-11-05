@@ -31,7 +31,7 @@ export default function Services() {
           color="transparent"
           fontWeight={"bold"}
           lineHeight={1}
-          fontFamily= {"Lora"}
+          fontFamily= {"Poppins"}
         >
           We Are&nbsp;
         </Typography>
@@ -44,7 +44,7 @@ export default function Services() {
       <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
         <Typography
           color="white"
-          fontFamily={"Lora"}
+          fontFamily={"Poppins"}
           fontSize={{ xs: "40px", md: "70px" }}
         >
           <span style={{ color: "#005900", fontWeight: "bold" }}>What</span> We

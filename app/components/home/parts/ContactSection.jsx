@@ -22,14 +22,14 @@ const ContactSection = () => {
       <Stack margin={{ xs: "0 20px", md: "30px 50px 0 50px" }}>
         <Typography
           color="white"
-          fontFamily={"Lora"}
+          fontFamily={"Poppins"}
           fontSize={{ xs: "30px", md: "50px" }}
         >
           we mean business.
         </Typography>
         <Typography
           color="white"
-          fontFamily={"Lora"}
+          fontFamily={"Poppins"}
           fontSize={{ xs: "60px", md: "90px" }}
           lineHeight={1}
         >
@@ -61,7 +61,7 @@ const ContactSection = () => {
           margin={{ xs: "0 20px", md: "auto" }}
         >
           <Stack gap={"5px"}>
-            <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
+            <Typography color="white" fontSize={"20px"} fontFamily={"Poppins"}>
               We greatly appreciate your interest.
             </Typography>
           </Stack>

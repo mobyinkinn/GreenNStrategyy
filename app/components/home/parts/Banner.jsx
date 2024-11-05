@@ -151,7 +151,7 @@ function Card({ d }) {
       >
         <Typography
           fontSize={{ xs: "2rem", md: "1.8rem", lg: "2.5rem" }}
-          fontFamily={"Lora"}
+          fontFamily={"Poppins"}
         >
           {d.head} <span style={{ color: "#005900" }}>{d.head2}</span>
         </Typography>
@@ -164,7 +164,7 @@ function Card({ d }) {
             bgcolor: "#655d5d",
           }}
         />
-        {/* <Typography fontSize={"1.4rem"} fontFamily={"Lora"} marginTop={"50px"}>
+        {/* <Typography fontSize={"1.4rem"} fontFamily={"Poppins"} marginTop={"50px"}>
           {d.content}
         </Typography> */}
         {Array.isArray(d.content?.leftColumn) &&
@@ -182,7 +182,7 @@ function Card({ d }) {
                     key={index}
                     style={{
                       fontSize: "1.4rem",
-                      fontFamily: "Lora",
+                      fontFamily: "Poppins",
                       marginBottom: "15px",
                     }}
                   >
@@ -199,7 +199,7 @@ function Card({ d }) {
                     key={index}
                     style={{
                       fontSize: "1.4rem",
-                      fontFamily: "Lora",
+                      fontFamily: "Poppins",
                       marginBottom: "15px",
                     }}
                   >
@@ -212,7 +212,7 @@ function Card({ d }) {
         ) : (
           <Typography
             fontSize={"1.4rem"}
-            fontFamily={"Lora"}
+            fontFamily={"Poppins"}
             marginTop={"10px"}
           >
             {d.content}

@@ -184,7 +184,7 @@ body {
   background-size: contain;
   background-position: center; /* Center the image */
   background-attachment: fixed;
-  font-family: "Lora", serif;
+  /* font-family: "Poppins", serif; */
 }
 
 .text-stroke {
