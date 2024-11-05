@@ -127,13 +127,14 @@ function Card({ d }) {
       sx={{ flexWrap: "wrap" }}
       direction={{ md: "row" }}
       key={d.id}
+      margin={{ xs: "0 20px", md: "0 70px" }}
       height={{ md: "57vh" }}
       alignItems={"center"}
     >
       <Box
         position={"relative"}
         height={{ xs: "40vh", md: "53vh" }}
-        width={{ xs: "80%", md: "40%" }}
+        width={{ xs: "100%", md: "40%" }}
         borderRadius={{ xs: "40px 0 40px 0", md: "100px 0 0 0" }}
         overflow={"hidden"}
         sx={{
@@ -143,10 +144,10 @@ function Card({ d }) {
         }}
       ></Box>
       <Box
-        width={{ xs: "80%", md: "50%" }}
+        width={{ xs: "100%", md: "50%" }}
         height={{ md: "100%" }}
         color={"#ddd"}
-        padding={{ xs: "20px 0 10px 0", md: "50px" }}
+        padding={{ xs: "20px 0 10px 10px", md: "50px" }}
       >
         <Typography
           fontSize={{ xs: "2rem", md: "1.8rem", lg: "2.5rem" }}
@@ -155,7 +156,7 @@ function Card({ d }) {
           {d.head} <span style={{ color: "#005900" }}>{d.head2}</span>
         </Typography>
         <Box
-          marginTop={{ xs: "15px", md: "30px" }}
+          marginTop={{ xs: "5px", md: "30px" }}
           width={{ lg: "400px", xs: "200px" }}
           sx={{
             content: "''",
@@ -171,7 +172,7 @@ function Card({ d }) {
           <Stack
             direction={"row"}
             spacing={5}
-            marginTop={{ xs: "15px", md: "30px" }}
+            marginTop={{ xs: "10px", md: "30px" }}
           >
             {/* Left Column */}
             <Box padding={{ lg: 0, md: "20px" }}>
@@ -212,7 +213,7 @@ function Card({ d }) {
           <Typography
             fontSize={"1.4rem"}
             fontFamily={"Lora"}
-            marginTop={"30px"}
+            marginTop={"10px"}
           >
             {d.content}
           </Typography>

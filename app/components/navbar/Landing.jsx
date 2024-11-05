@@ -194,7 +194,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { Box, Stack, Typography } from "@mui/material";
@@ -320,10 +319,13 @@ export default function Landing({ setShowNav }) {
               height={"100%"}
               width={"100%"}
             >
-              <Box width={"400px"} height={"400px"} position={"absolute"}>
+              <Box
+                width={{ smm: "400px", xs: "280px" }}
+                height={{ smm: "400px", xs: "280px" }}
+                position={"absolute"}
+              >
                 <Image src={logo} alt="" fill objectFit="contain" />
               </Box>
-              
             </Stack>
           </Stack>
         </Stack>

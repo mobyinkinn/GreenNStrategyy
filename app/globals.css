@@ -236,3 +236,9 @@ body {
   z-index: 9999; /* Ensures the cursor is above other elements */
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}

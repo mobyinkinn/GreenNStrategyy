@@ -11,7 +11,7 @@ export default function Services() {
         md: "50px 70px",
       }}
       color={"white"}
-      gap={"30px"}
+      gap={{ smm: "30px", xs: "10px" }}
       id={"service"}
     >
       {/* <h2

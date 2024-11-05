@@ -14,7 +14,7 @@ export default function ServiceCard({ name, data, path }) {
   };
   return (
     <Stack
-      padding={"10px"}
+      padding={{ smm: "10px" }}
       className="div-animated"
       onMouseEnter={() => setShowButton(true)}
       onMouseLeave={() => setShowButton(false)}
@@ -28,7 +28,7 @@ export default function ServiceCard({ name, data, path }) {
     >
       <Stack
         width={{
-          xs: "80vw",
+          xs: "100%",
           md: "35vw",
           lg: "20vw",
         }}

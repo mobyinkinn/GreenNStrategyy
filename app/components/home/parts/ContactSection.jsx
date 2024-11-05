@@ -19,7 +19,7 @@ const ContactSection = () => {
   };
   return (
     <Stack margin={"50px 0"} id={"contact"}>
-      <Stack margin={{ xs: "0 30px", md: "30px 50px 0 50px" }}>
+      <Stack margin={{ xs: "0 20px", md: "30px 50px 0 50px" }}>
         <Typography
           color="white"
           fontFamily={"Lora"}
@@ -53,12 +53,12 @@ const ContactSection = () => {
         direction={{
           md: "row",
         }}
-        p={"50px 0px"}
+        p={{ md: "50px 0px", xs: "30px 0" }}
       >
         <Stack
           width={{ md: "30%" }}
           gap={"20px"}
-          margin={{ xs: "0 30px", md: "auto" }}
+          margin={{ xs: "0 20px", md: "auto" }}
         >
           <Stack gap={"5px"}>
             <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
@@ -81,7 +81,7 @@ const ContactSection = () => {
           gap={"15px"}
           sx={{
             maxWidth: "700px",
-            padding: "30px",
+            padding: "30px 20px",
           }}
         >
           <Stack direction={{ md: "row" }} gap={"15px"}>

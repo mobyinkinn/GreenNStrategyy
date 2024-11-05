@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import { Box, margin } from "@mui/system";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -59,9 +59,15 @@ var settings = {
       },
     },
     {
-      breakpoint: 430, // For small screens (mobile)
+      breakpoint: 420, // For small screens (mobile)
       settings: {
         slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 370, // For small screens (mobile)
+      settings: {
+        slidesToShow: 2,
       },
     },
   ],
@@ -103,9 +109,15 @@ var settingsRight = {
       },
     },
     {
-      breakpoint: 430, // For small screens (mobile)
+      breakpoint: 420, // For small screens (mobile)
       settings: {
         slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 370, // For small screens (mobile)
+      settings: {
+        slidesToShow: 2,
       },
     },
   ],
@@ -113,7 +125,7 @@ var settingsRight = {
 
 export default function Carausal() {
   return (
-    <Box padding={{ sm: "50px 20px", xl: "50px 50px" }}>
+    <Box padding={{ xs: "20px 20px", xl: "50px 50px" }}>
       <Stack direction={"row"} alignItems={"Center"} pb={2}>
         <Typography
           color="white"
@@ -123,7 +135,7 @@ export default function Carausal() {
             xll: "55px",
             lg: "40px",
             md: "35px",
-            sm: "30px",
+            xs: "30px",
           }}
         >
           Our Clients

@@ -139,6 +139,8 @@ export default function Navbar({ scrollToSection, showNav }) {
                     smm: "50px",
                   },
                   color: "#005900",
+                  position: "relative",
+                  bottom: "5px",
                 }}
                 onClick={() => setIsNavOpen(true)}
               />
@@ -148,6 +150,7 @@ export default function Navbar({ scrollToSection, showNav }) {
                   width: "60px",
                   height: "60px",
                   color: "#005900",
+                  bottom: "5px",
                 }}
                 onClick={() => setIsNavOpen(false)}
               />
