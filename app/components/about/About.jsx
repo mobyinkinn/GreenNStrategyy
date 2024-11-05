@@ -139,9 +139,9 @@ export default function About() {
         <Stack
           bgcolor={"#333"}
           padding={{ xl: 3, sm: "0 18px" }}
-          direction={"row"}
+          direction={{ smm: "row" }}
           flexWrap={"wrap"}
-          gap={{ xl: 5, md: "40px", sm: "17px" }}
+          gap={{ xl: 5, md: "40px", smm: "17px", xs: "40px" }}
           justifyContent={"center"}
           alignItems={"center"}
           m={"20px 0 40px 0"}
@@ -149,13 +149,19 @@ export default function About() {
           {data.map((d) => (
             <Stack
               position={"relative"}
-              height={{ xl: "50vh", lg: "46vh", md: "35vh", sm: "15vh" }}
-              width={"30%"}
+              height={{
+                xl: "50vh",
+                lg: "46vh",
+                md: "35vh",
+                smm: "15vh",
+                xs: "40vh",
+              }}
+              width={{ smm: "30%", xs: "100%" }}
             >
               <Image
                 src={d.path}
-                objectPosition="bottom"
-                objectFit="contain"
+                objectFit="cover"
+                objectPosition="top center"
                 style={{
                   filter: "grayscale(100%)",
                 }}
@@ -166,7 +172,7 @@ export default function About() {
                 position={"absolute"}
                 bgcolor={"white"}
                 right={-10}
-                padding={{ xl: 1, sm: "3px" }}
+                padding={{ xl: "10px", sm: "5px" }}
                 bottom={-10}
               >
                 <Typography

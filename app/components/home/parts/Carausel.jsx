@@ -138,7 +138,14 @@ export default function Carausal() {
             xs: "30px",
           }}
         >
-          Our Clients
+          Our{" "}
+          <span
+            style={{
+              color: "#005900",
+            }}
+          >
+            Clients
+          </span>
         </Typography>
       </Stack>
       <Stack gap={"40px"}>
