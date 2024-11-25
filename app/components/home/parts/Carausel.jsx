@@ -5,6 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import img from "@/public/assets/client1.jpg";
 import img3 from "@/public/assets/client2.jpg";
 import img4 from "@/public/assets/client3.jpg";
+import img5 from "@/public/assets/client4.jpg";
+import img6 from "@/public/assets/client5.jpg";
+import img7 from "@/public/assets/client6.jpg";
+
 import Image from "next/image";
 import { Stack, Typography } from "@mui/material";
 
@@ -12,15 +16,15 @@ const carausel = [
   { id: 0, img: img },
   { id: 1, img: img3 },
   { id: 2, img: img4 },
-  { id: 3, img: img },
-  { id: 4, img: img3 },
-  { id: 5, img: img4 },
+  { id: 3, img: img5 },
+  { id: 4, img: img6 },
+  { id: 5, img: img7 },
   { id: 6, img: img },
   { id: 7, img: img3 },
   { id: 8, img: img4 },
-  { id: 9, img: img },
-  { id: 10, img: img3 },
-  { id: 11, img: img4 },
+  { id: 9, img: img5 },
+  { id: 10, img: img6 },
+  { id: 11, img: img7 },
 ];
 
 var settings = {

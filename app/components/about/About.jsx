@@ -19,7 +19,7 @@ export default function About() {
     },
     {
       path: businessStrategist,
-      Name: "Omar Al Mari",
+      Name: "Omar Al Marai",
       Designation: "Business Strategist",
     },
     {
@@ -99,6 +99,7 @@ export default function About() {
         </Stack>
       </Stack> */}
       <Stack
+      gap={3}
         alignItems={"center"}
         justifyContent={"center"}
         height={{ xl: "100vh", md: "100vh", xs: "100vh" }}
@@ -110,7 +111,7 @@ export default function About() {
           About Us
         </Typography>
         <Typography
-          fontSize={{ xl: "1rem", lg: "1rem", md: "1rem", xs: "0.8rem" }}
+          fontSize={{ xl: "1.3rem", lg: "1rem", md: "1rem", xs: "0.8rem" }}
           width={{ md: "70%", xs: "90%" }}
           textAlign={"center"}
           color="white"
