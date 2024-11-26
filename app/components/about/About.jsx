@@ -111,7 +111,7 @@ export default function About() {
           About Us
         </Typography>
         <Typography
-          fontSize={{ xl: "1.3rem", lg: "1rem", md: "1rem", xs: "0.8rem" }}
+          fontSize={{ xl: "1.6rem", lg: "1.2rem", md: "1.1rem", xs: "0.8rem" }}
           width={{ md: "70%", xs: "90%" }}
           textAlign={"center"}
           color="white"
